@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import { List, ListItem } from 'material-ui/List';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -19,7 +18,7 @@ export class FormUserDetails extends Component {
     render() {
         const { values: {firstName, lastName, email, occupation, city, bio} } = this.props;
         return (
-            <MuiThemeProvider>
+            
                 <React.Fragment>
                     <AppBar title="Confirm User Data" />
                         <List>
@@ -62,7 +61,7 @@ export class FormUserDetails extends Component {
                         onClick={this.continue}
                     />
                 </React.Fragment>
-            </MuiThemeProvider>
+            
         );
     }
 }

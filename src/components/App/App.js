@@ -1,12 +1,43 @@
 import React from 'react';
 import './App.css';
 import { UserForm } from '../Login/UserForm';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
+import AppBar  from '../AppBar/AppBar.js';
+import { List, ListItem } from 'material-ui/List';
+import RaisedButton from 'material-ui/RaisedButton';
+import { MuiThemeProvider } from 'material-ui/styles';
+
+
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#33ccff'
+    },
+    secondary: {
+      main: '#ffffff',
+    }
+
+  },
+  status: {
+    danger: '#33ccff',
+  },
+});
 
 function App() {
+console.log(theme);
   return (
-    <div className="App">
-      <UserForm />
+    <MuiThemeProvider >
+  <div className="App">
+    <ThemeProvider theme={theme}>
+        <AppBar />
+       <UserForm />
+    
+    </ThemeProvider>
     </div>
+    </MuiThemeProvider>
+    
   );
 }
 

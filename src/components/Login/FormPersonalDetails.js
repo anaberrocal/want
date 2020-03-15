@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -18,7 +17,7 @@ export class FormPersonalDetails extends Component {
     render() {
         const { values, handleChange } = this.props;
         return (
-            <MuiThemeProvider>
+           
                 <React.Fragment>
                     <AppBar title="Enter Personal Details" />
                     <TextField 
@@ -57,7 +56,7 @@ export class FormPersonalDetails extends Component {
                     />
 
                 </React.Fragment>
-            </MuiThemeProvider>
+            
         );
     }
 }
