@@ -16,7 +16,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import WantLogo from './want-logo.png';
+import WantLogo from './want.png';
 
 const useStyles = makeStyles(theme => ({
   grow: {
