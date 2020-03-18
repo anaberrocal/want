@@ -19,8 +19,16 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import WantLogo from './want.png';
+import { withStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
+  customBadge: {
+    backgroundColor: "#ff0000",
+    color: "white"
+  },
+  // margin: {
+  //   margin: theme.spacing.unit * 2
+  // },
   grow: {
     flexGrow: 1,
   },
@@ -204,8 +212,8 @@ export default function PrimarySearchAppBar() {
                 >
               <AccountCircle />
             </IconButton>
-            <IconButton badgeContent={2} aria-label="show 2 new notifications" color="inherit">
-              <Badge color="secondary">
+            <IconButton aria-label="show 2 new notifications" color="inherit">
+              <Badge  badgeContent={2}  classes={{ badge: classes.customBadge }} >
                 <CardGiftcardIcon />
               </Badge>
             </IconButton>
