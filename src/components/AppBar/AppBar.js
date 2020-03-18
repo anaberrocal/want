@@ -1,4 +1,5 @@
 import React from 'react';
+import './AppBar.css';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -15,6 +16,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import WantLogo from './want.png';
 
@@ -32,11 +34,11 @@ const useStyles = makeStyles(theme => ({
     },
   },
   search: {
-    position: 'relative',
+    position: 'absolute',
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
+     backgroundColor: '#ffffff', //fade(theme.palette.common.white, 0.25),
     '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
+      backgroundColor: '#ffffff',
     },
     marginLeft: 0,
     width: '100%',
@@ -177,7 +179,7 @@ export default function PrimarySearchAppBar() {
           {/* <Typography className={classes.title} variant="h6" noWrap> */}
             <img src={WantLogo} alt="logo"/>
           {/* </Typography> */}
-          <div className={classes.search}>
+          <div id="SearchBox"className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
@@ -201,6 +203,11 @@ export default function PrimarySearchAppBar() {
               color="inherit"
                 >
               <AccountCircle />
+            </IconButton>
+            <IconButton badgeContent={2} aria-label="show 2 new notifications" color="inherit">
+              <Badge color="secondary">
+                <CardGiftcardIcon />
+              </Badge>
             </IconButton>
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge  color="secondary">
