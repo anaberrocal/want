@@ -1,5 +1,19 @@
 #SearchBox{
-    right: 17%;
+    right: 18%;
     width: auto;
     height: 50%;
+   
 }
+@media only screen and (max-width: 600px) {
+    #SearchBox {
+      visibility: hidden;
+    }
+  }
+  @media only screen and (max-width: 1212px) {
+    #SearchBox {
+        right: 20%;
+        width: auto;
+        height: 50%;
+       
+    }
+  }

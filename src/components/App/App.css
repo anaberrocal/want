@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  font-weight: bold;
+  position: absolute;
+  display: block;
+  bottom: 3%;
+  right: 40%;
+  left: 40%;
+  
+}

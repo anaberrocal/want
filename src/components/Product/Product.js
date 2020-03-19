@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+let MediaCard = function MediaCard() {
   const classes = useStyles();
 
   return (
@@ -38,17 +38,18 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        {/* <Button size="small" color="primary">
           Share
         </Button>
         <Button size="small" color="primary">
           Learn More
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   );
 }
 
+export default MediaCard;
 // class Product extends React.Component {
 //     render(){
 //      return (
@@ -60,11 +61,11 @@ export default function MediaCard() {
 //      <div className="Product-information">
 //        <div className="Product-address">
 //          <p>{this.props.Product.address}</p>
-//          <p>{this.props.Product.city}</p>
-//          <p>{this.props.Product.state} {this.props.Product.zipCode}</p>
+//          
+//      
 //        </div>
-//        <div className="Product-reviews">
-//          <h3>{this.props.Product.category}</h3>
+//        
+//          
 //          <h3 className="rating">{this.props.Product.rating}</h3>
 //          <p>{this.props.Product.reviewCount} reviews </p>
 //        </div>

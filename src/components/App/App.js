@@ -39,11 +39,10 @@ console.log(theme);
     <ThemeProvider theme={theme}>
         <AppBar />
         <NavBar />
-        <Product />
         <ProductList/>
        
    
-    <footer>Made with <span>❤️</span> by <a target="_blank" href="https://anaberrocal.com/">Ana Berrocal</a>.</footer>
+    <footer className="footer">Made with <span>❤️</span> by <a target="_blank" href="https://anaberrocal.com/">Ana Berrocal</a>.</footer>
 
     </ThemeProvider>
     </div>

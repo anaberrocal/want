@@ -7,14 +7,15 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
 import Product from '../Product/Product.js';
+import MediaCard from '../Product/Product.js'
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
   paper: {
-    height: 140,
-    width: 100,
+    height: 300,
+    width: 300,
   },
   control: {
     padding: theme.spacing(2),
@@ -33,6 +34,7 @@ export default function SpacingGrid() {
           {[0, 1, 2].map(value => (
             <Grid key={value} item>
               <Paper className={classes.paper} />
+              <MediaCard/>
             </Grid>
           ))}
         </Grid>
