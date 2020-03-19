@@ -38,11 +38,13 @@
 }
 
 .footer {
+  background-color: '#ffffff';
   font-weight: bold;
-  position: absolute;
   display: block;
   bottom: 3%;
   right: 40%;
   left: 40%;
+  height: 35px;
+  width: auto;
   
 }
