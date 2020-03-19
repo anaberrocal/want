@@ -8,7 +8,7 @@ import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
 import Product from '../Product/Product.js';
 import MediaCard from '../Product/Product.js'
-import './ProductList.js';
+import './ProductList.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,7 +33,8 @@ export default function SpacingGrid() {
 
 
   return (
-    <Grid id="container" container className={classes.root} spacing={2}>
+    <div id="container">
+    <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12}>
         <Grid container justify="center" spacing={spacing}>
           {[0, 1, 2, 3, 4, 5, 6, 7].map(value => (
@@ -45,5 +46,6 @@ export default function SpacingGrid() {
         </Grid>
       </Grid>
     </Grid>
+    </div>
   );
 }

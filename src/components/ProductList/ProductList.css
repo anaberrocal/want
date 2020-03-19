@@ -1,6 +1,7 @@
 #container {
-    display: block;
-    position: fixed;
-    left: 35%;
-    right: 35%;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+   
+    
 }
