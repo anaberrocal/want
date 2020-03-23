@@ -41,6 +41,7 @@ export default function SpacingGrid() {
             <Grid key={value} item className={classes.mediaCard}>
               {/* <Paper className={classes.paper} /> */}
               <MediaCard />
+              <Product/>
             </Grid>
           ))}
         </Grid>

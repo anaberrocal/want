@@ -1,5 +1,4 @@
 export const Product = {
-    state = {
     products: [
                 {   
         productName: "Pressure Cooker",
@@ -29,5 +28,5 @@ export const Product = {
                   
             }
         ]   
-    }
+    
 };
