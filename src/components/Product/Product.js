@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-const products = [
+const product = [
               {   
       productName: "Pressure Cooker",
       productPrice: 99.99,
@@ -61,11 +61,11 @@ let MediaCard = function MediaCard() {
         /> */}
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {products.map( (products) => (
+            {product.map( (product) => (
               <>
-              <div>{products.productName}</div>
-              <Typography>{products.productPrice}</Typography>
-              <CardMedia className={classes.media}src={products.productsImg}/>
+              <div>{product.productName}</div>
+              <Typography>{product.productPrice}</Typography>
+              <CardMedia className={classes.media}src={product.productImg}/>
               </>
               ))}
               
