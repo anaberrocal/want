@@ -40,8 +40,8 @@ export default function SpacingGrid() {
           {[0, 1, 2, 3, 4, 5, 6, 7].map(value => (
             <Grid key={value} item className={classes.mediaCard}>
               {/* <Paper className={classes.paper} /> */}
-              {/* <MediaCard /> */}
-              <Product/>
+              <MediaCard />
+              {/* <Product/> */}
             </Grid>
           ))}
         </Grid>
