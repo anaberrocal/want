@@ -9,7 +9,7 @@ import Product from '../Product/Product.js';
 import ProductList from '../ProductList/ProductList.js';
 // import { List, ListItem } from 'material-ui/List';
 // import RaisedButton from 'material-ui/RaisedButton';
-import { MuiThemeProvider } from 'material-ui/styles';
+// import { MuiThemeProvider } from 'material-ui/styles';
 
 
 
@@ -32,9 +32,9 @@ const theme = createMuiTheme({
 });
 
 function App() {
-console.log(theme);
+// console.log(theme);
   return (
-    <MuiThemeProvider >
+    
   <div className="App">
     <ThemeProvider theme={theme}>
         <AppBar />
@@ -51,7 +51,7 @@ console.log(theme);
 
     </ThemeProvider>
     </div>
-    </MuiThemeProvider>
+   
     
   );
 }
