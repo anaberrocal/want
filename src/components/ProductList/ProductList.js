@@ -22,31 +22,19 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   mediaCard: {
-    height: 300,
+    height: 500,
     width: 300,
   },
 }));
 
 export default function SpacingGrid() {
-  const [spacing] = React.useState(2);
+  const [spacing] = React.useState(1);
   const classes = useStyles();
 
 
   return (
     <div id="container">
-    <Grid container className={classes.root} spacing={2}>
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing={spacing}>
-          {[0, 1, 2, 3, 4, 5, 6, 7].map(value => (
-            <Grid key={value} item className={classes.mediaCard}>
-              {/* <Paper className={classes.paper} /> */}
-              <MediaCard />
-              {/* <Product/> */}
-            </Grid>
-          ))}
-        </Grid>
-      </Grid>
-    </Grid>
+    <Product/>
     </div>
   );
 }

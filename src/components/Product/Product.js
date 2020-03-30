@@ -13,7 +13,9 @@ const useStyles = makeStyles({
     maxWidth: 345
   },
   media: {
-    height: 140
+    height: 345,
+    width: 300,
+    marginBottom: '10%'
   }
 });
 
@@ -158,27 +160,27 @@ let MediaCard = function MediaCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card >
       <CardActionArea>
          {/* <CardMedia
           className={classes.media}
           {products.map( (products) => {products.productImg})}
         />  */}
-        <CardContent>
+        <CardContent className={classes.root}>
           <Typography gutterBottom variant="h5" component="h2">
             {product.map(product => (
               <>
-                <div>{product.productName}</div>
-                <Typography>{product.productPrice}</Typography>
                 <CardMedia className={classes.media} image={product.productImg} />
+                <div>{product.productName}<Typography>{product.productPrice}</Typography></div>
+                {/* <Typography>{product.productPrice}</Typography> */}
               </>
             ))}
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body2"
             color="textSecondary"
             component="p"
-          ></Typography>
+          ></Typography> */}
         </CardContent>
       </CardActionArea>
       {/* <CardActions>
@@ -188,28 +190,3 @@ let MediaCard = function MediaCard() {
 };
 
 export default MediaCard;
-// class Product extends React.Component {
-//     render(){
-//      return (
-//        <div className="Product">
-//      <div className="image-container">
-//        <img src={this.props.Product.imageSrc} alt=''/>
-//      </div>
-//      <h2>{this.props.Product.name}</h2>
-//      <div className="Product-information">
-//        <div className="Product-address">
-//          <p>{this.props.Product.address}</p>
-//
-//
-//        </div>
-//
-//
-//          <h3 className="rating">{this.props.Product.rating}</h3>
-//          <p>{this.props.Product.reviewCount} reviews </p>
-//        </div>
-//      </div>
-//    </div>
-//      );
-//     }
-//    }
-// export default Product;

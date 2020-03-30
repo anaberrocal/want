@@ -173,7 +173,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
             {/* Hamburger icon commented out */}
           {/* <IconButton
