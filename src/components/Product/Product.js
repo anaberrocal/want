@@ -115,7 +115,7 @@ const product = [
     productName: "Floor Mat Bathroom Three-piece",
     productPrice: "$9.00",
     productImg: "https://contestimg.wish.com/api/image/fetch?contest_id=5d9d84d9b2269411ef11e7c6&s=1&w=600&h=600&q=80",
-  }
+  },
   {
     productName: "Floor Mat Bathroom Three-piece",
     productPrice: "$9.00",
