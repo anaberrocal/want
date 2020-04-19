@@ -26,8 +26,9 @@ const theme = createMuiTheme({
     }
 
   },
-  status: {
-    danger: '#33ccff',
+  typography: {
+    fontFamily: 'Montserrat',
+    fontWeight: 500,
   },
 });
 
