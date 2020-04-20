@@ -7,19 +7,23 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import ProductList from "../ProductList/ProductList.js";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345
+    maxWidth: 345,
   },
   media: {
     height: 345,
     width: 300,
-    marginBottom: '10%'
+    marginBottom: '5%',
+  },
+  title: {
+    marginBottom: '10%',
   }
 });
 
-const product = [
+export const product = [
   {
     productName: "Color Curtains",
     productPrice: "$20.00",
@@ -117,9 +121,9 @@ const product = [
     productImg: "https://contestimg.wish.com/api/image/fetch?contest_id=5d9d84d9b2269411ef11e7c6&s=1&w=600&h=600&q=80",
   },
   {
-    productName: "Floor Mat Bathroom Three-piece",
-    productPrice: "$9.00",
-    productImg: "https://contestimg.wish.com/api/image/fetch?contest_id=5d9d84d9b2269411ef11e7c6&s=1&w=600&h=600&q=80",
+    productName: "True Wireless Earbud",
+    productPrice: "$0.74",
+    productImg: "https://contestimg.wish.com/api/webimage/5dafb00d34a93804a890b417-0-large?cache_buster=2decd371275c3220745d2d93ed1a9a90",
   }
 ];
 
@@ -135,19 +139,14 @@ let MediaCard = function MediaCard() {
         />  */}
         <CardContent className={classes.root}>
           <Typography gutterBottom variant="h5" component="h2">
-            {product.map(product => (
+            <ProductList hhh='kljjj' product={[...product]}/>
+            {/* {product.map(product => (
               <>
                 <CardMedia className={classes.media} image={product.productImg} />
-                <div>{product.productName}<Typography>{product.productPrice}</Typography></div>
-                {/* <Typography>{product.productPrice}</Typography> */}
+                <div className={classes.title} >{product.productName}<Typography>{product.productPrice}</Typography></div>
               </>
-            ))}
+            ))} */}
           </Typography>
-          {/* <Typography
-            variant="body2"
-            color="textSecondary"
-            component="p"
-          ></Typography> */}
         </CardContent>
       </CardActionArea>
       {/* <CardActions>

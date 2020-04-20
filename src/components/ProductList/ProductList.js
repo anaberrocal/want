@@ -6,13 +6,14 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
-import Product from '../Product/Product.js';
+import product from '../Product/Product.js';
 import MediaCard from '../Product/Product.js'
 import './ProductList.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    display: 'flex',
   },
   // paper: {
   //   height: 300,
@@ -22,21 +23,23 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   mediaCard: {
-    height: 500,
-    width: 300,
+    // height: 500,
+    // width: 300,
   },
 }));
 
-export default function SpacingGrid() {
-  const [spacing] = React.useState(1);
-  const classes = useStyles();
+export default function ProductList(props) {
+  
 
+
+  // const [spacing] = React.useState(1);
+  // const classes = useStyles();
+
+console.log(props);
 
   return (
-    <div style={{display: 'flex'}} id="container">
-    <Product/>
-    <Product/>
-    <Product/>
+    <div  id="container">
+    
     </div>
   );
 }
