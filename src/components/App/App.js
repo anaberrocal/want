@@ -5,7 +5,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
 import AppBar  from '../AppBar/AppBar.js';
 import NavBar from '../NavBar/NavBar.js';
-import Product from '../Product/Product.js';
+// import Product from '../Product/Product.js';
 import ProductList from '../ProductList/ProductList.js';
 // import { List, ListItem } from 'material-ui/List';
 // import RaisedButton from 'material-ui/RaisedButton';
@@ -49,7 +49,7 @@ function App() {
             </div>
           </div>
         </div> */}
-        <ProductList/>
+        <ProductList />
     <div id="footer-container"><footer className="footer">Made with <span>❤️</span> by <a target="_blank" href="https://anaberrocal.com/">Ana Berrocal</a></footer></div>
 
     </ThemeProvider>
