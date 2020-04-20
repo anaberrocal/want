@@ -52,8 +52,11 @@ function LinkTab(props) {
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-    // marginTop:'3.9%',
+    // backgroundColor: theme.palette.background.paper,
+    textTransform: 'none',
+    fontWeight: '25px',
+    fontSize: 20,
+    letterSpacing: 0.8,
   },
 }));
 
@@ -74,9 +77,9 @@ export default function NavTabs() {
           onChange={handleChange}
           aria-label="nav tabs example"
         >
-          <LinkTab label="Popular" href="/drafts" {...a11yProps(0)} />
-          <LinkTab label="Hot Deals" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Specially for you" href="/spam" {...a11yProps(2)} />
+          <LinkTab className={classes.root} label="Popular" href="/drafts" {...a11yProps(0)} />
+          <LinkTab className={classes.root} label="Hot Deals" href="/trash" {...a11yProps(1)} />
+          <LinkTab className={classes.root} label="Specially for you" href="/spam" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

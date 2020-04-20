@@ -33,7 +33,7 @@ export default function SpacingGrid() {
 
 
   return (
-    <div id="container">
+    <div style={{display: 'flex'}} id="container">
     <Product/>
     <Product/>
     <Product/>
