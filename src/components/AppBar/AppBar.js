@@ -22,6 +22,9 @@ import WantLogo from './want.png';
 import { withStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    fontWeight: theme.typography.fontWeight,
+  },
   customBadge: {
     backgroundColor: "#ff0000",
     color: "white"
@@ -173,7 +176,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="fixed">
+      <AppBar classes={classes.root} position="static">
         <Toolbar>
             {/* Hamburger icon commented out */}
           {/* <IconButton

@@ -27,7 +27,9 @@ const theme = createMuiTheme({
 
   },
   typography: {
+    textTransform: 'none',
     fontFamily: 'Montserrat',
+    // fontFamily: 'sans-serif',
     fontWeight: 500,
   },
 });
@@ -40,13 +42,13 @@ function App() {
     <ThemeProvider theme={theme}>
         <AppBar />
         <NavBar />
-        <div id="dots-container">
+        {/* <div id="dots-container">
           <div class="snippet" data-title=".dot-pulse">
             <div class="stage">
               <div class="dot-pulse"></div>
             </div>
           </div>
-        </div>
+        </div> */}
         <ProductList/>
     <div id="footer-container"><footer className="footer">Made with <span>❤️</span> by <a target="_blank" href="https://anaberrocal.com/">Ana Berrocal</a></footer></div>
 

@@ -35,6 +35,8 @@ export default function SpacingGrid() {
   return (
     <div id="container">
     <Product/>
+    <Product/>
+    <Product/>
     </div>
   );
 }
